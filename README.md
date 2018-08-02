@@ -1,15 +1,10 @@
 # flowlayout-singlechoose-library
 android流式布局单选（带输入框可增删）库
-先看效果图:
-![加载失败](https://img-blog.csdn.net/20180801110336108?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1Z2VuZ3Rpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-应该很明了了，流式布局，前面可以加个标题（也支持去掉），最后面默认带个输入框（也可以设置不带），布局主要内容是各个标签，单击选中，
-会自动弹出软键盘，按删除键就把选中的标签删掉；也支持通过软键盘的删除键自动选中最后一个标签，再按删除键就把该标签删除；支持输入框输入
-以新增标签，当输入内容并加上逗号，会自动识别并把逗号前面的内容作为新增的标签加入到布局当中。可以看到，发邮件选收件人时这个布局还是很
-好用的。右侧的加号按钮可以批量新增标签，在写邮件时就可以点击跳转到通讯录列表界面选择多个收件人了，再把数据带回这个布局当中作为新增的
-标签。
+先看效果图:<br>
+![加载失败](https://github.com/qugengting/flowlayout-singlechoose-library/tree/master/library/flowlayout.gif)
+看完应该很明了了，流式布局，前面可以加个标题（也支持去掉），最后面默认带个输入框（也可以设置不带），布局主要内容是各个标签，单击选中，会自动弹出软键盘，按删除键就把选中的标签删掉；也支持通过软键盘的删除键自动选中最后一个标签，再按删除键就把该标签删除；支持输入框输入以新增标签，当输入内容并加上逗号，会自动识别并把逗号前面的内容作为新增的标签加入到布局当中。可以看到，发邮件选收件人时这个布局还是很好用的。右侧的加号按钮可以批量新增标签，在写邮件时就可以点击跳转到通讯录列表界面选择多个收件人了，再把数据带回这个布局当中作为新增的标签。<br>
 
-该布局是参照张鸿洋的相关博客写成的，核心是流式布局和标签的单选，巧妙的地方是给每个流式布局的子控件加上一层FrameLayout便于统一
-处理，标题、输入框和选中删除是我新增的。具体实现就不多说了，张鸿洋的博客写得非常清楚：<br>[Android 自定义ViewGroup 实战篇 -> 实现FlowLayout](https://blog.csdn.net/lmj623565791/article/details/38352503)<br>[Android TagFlowLayout完全解析 一款针对Tag的布局](https://blog.csdn.net/lmj623565791/article/details/48393217)
+该布局是参照张鸿洋的相关博客写成的，核心是流式布局和标签的单选，巧妙的地方是给每个流式布局的子控件加上一层FrameLayout便于统一处理，标题、输入框和选中删除是我新增的。具体实现就不多说了，张鸿洋的博客写得非常清楚：<br>[Android 自定义ViewGroup 实战篇 -> 实现FlowLayout](https://blog.csdn.net/lmj623565791/article/details/38352503)<br>[Android TagFlowLayout完全解析 一款针对Tag的布局](https://blog.csdn.net/lmj623565791/article/details/48393217)
 
 这里直接看怎么用这个布局吧：
 
@@ -21,7 +16,7 @@ allprojects {
 
         ...
 
-        `maven { url 'https://jitpack.io' }`
+        maven { url 'https://jitpack.io' }
 
     }
 
@@ -31,7 +26,7 @@ allprojects {
 ```
 dependencies {
 
-    `implementation 'com.github.qugengting:flowlayout-singlechoose-library:1.0.0'`
+    implementation 'com.github.qugengting:flowlayout-singlechoose-library:1.0.0'
 
 }
 ```
